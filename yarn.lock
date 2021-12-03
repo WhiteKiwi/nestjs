@@ -727,6 +727,7 @@ __metadata:
     joi: ^17.5.0
     prettier: ^2.5.0
     reflect-metadata: ^0.1.13
+    rimraf: ^3.0.2
     rxjs: ^7.4.0
     ts-jest: ^27.0.7
     ts-node: ^10.4.0

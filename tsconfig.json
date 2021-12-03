@@ -16,7 +16,6 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"moduleResolution": "node",
-		"noEmit": true,
 		"strict": true,
 		"noImplicitAny": true,
 		"noUnusedLocals": true,

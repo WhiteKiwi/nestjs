@@ -1,6 +1,6 @@
 {
 	"name": "@kiwi-lib/nestjs",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"main": "src/index.ts",
 	"types": "lib/index.d.ts",
 	"repository": "git@github.com:kiwi-lib/nestjs.git",
@@ -10,7 +10,8 @@
 		"test": "jest --forceExit",
 		"test:watch": "jest --watch",
 		"test:cov": "jest --coverage --forceExit",
-		"build": "tsc",
+		"prebuild": "rimraf ./lib",
+		"build": "yarn run prebuild && tsc --project tsconfig.build.json",
 		"script": "ts-node .scripts/index.ts"
 	},
 	"dependencies": {
@@ -35,6 +36,7 @@
 		"eslint-plugin-prettier": "^4.0.0",
 		"jest": "^27.4.3",
 		"prettier": "^2.5.0",
+		"rimraf": "^3.0.2",
 		"ts-jest": "^27.0.7",
 		"ts-node": "^10.4.0",
 		"tsconfig-paths": "^3.12.0",
