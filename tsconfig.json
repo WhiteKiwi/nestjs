@@ -14,8 +14,14 @@
 		"baseUrl": "./",
 		"incremental": true,
 		"resolveJsonModule": true,
-		"esModuleInterop": true
-	},
-	"include": ["src"],
-	"exclude": ["lib", ".scripts", "**/*spec.ts"]
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"noEmit": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"paths": {
+			"@test/*": ["./test/*"]
+		}
+	}
 }

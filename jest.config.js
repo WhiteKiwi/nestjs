@@ -7,6 +7,9 @@ module.exports = {
 	},
 	collectCoverageFrom: ['**/*.(t|j)s', '!**/index.ts'],
 	coveragePathIgnorePatterns: ['<rootDir>/index.ts'],
+	moduleNameMapper: {
+		'^@test/(.*)$': '<rootDir>/../test/$1',
+	},
 	coverageDirectory: '../coverage',
 	testEnvironment: 'node',
 	testTimeout: 60000,
