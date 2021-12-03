@@ -1,5 +1,6 @@
 import { publish } from './publish';
-const scripts = {
+
+const scripts: Record<string, (...args: string[]) => Promise<void>> = {
 	publish,
 };
 
@@ -10,7 +11,8 @@ async function run(scriptName: string) {
 		return;
 	}
 
-	await script(...process.argv.slice(3));
+	const args = process.argv.slice(3);
+	await script(...args);
 	process.exit();
 }
 
