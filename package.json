@@ -2,7 +2,7 @@
 	"name": "@kiwi-lib/nestjs",
 	"version": "0.0.1",
 	"main": "src/index.ts",
-	"types": "src/index.ts",
+	"types": "lib/index.d.ts",
 	"repository": "git@github.com:kiwi-lib/nestjs.git",
 	"author": "Whitekiwi <jh145478@gmail.com>",
 	"scripts": {
