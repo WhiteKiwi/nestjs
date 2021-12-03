@@ -1,0 +1,43 @@
+{
+	"name": "@kiwi-lib/nestjs",
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"repository": "git@github.com:kiwi-lib/nestjs.git",
+	"author": "Whitekiwi <jh145478@gmail.com>",
+	"scripts": {
+		"lint": "eslint \"{{src}/**/*.ts,**.js}\" --fix",
+		"test": "jest --forceExit",
+		"test:watch": "jest --watch",
+		"test:cov": "jest --coverage --forceExit",
+		"build": "tsc",
+		"script": "ts-node .scripts/index.ts"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.3",
+		"@types/node": "^16.11.11",
+		"@typescript-eslint/eslint-plugin": "^5.5.0",
+		"@typescript-eslint/parser": "^5.5.0",
+		"eslint": "^8.3.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"jest": "^27.4.3",
+		"prettier": "^2.5.0",
+		"ts-jest": "^27.0.7",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.2"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/kiwi-lib/nestjs",
+	"bugs": {
+		"url": "https://github.com/kiwi-lib/nestjs/issues",
+		"email": "jh145478@gmail.com"
+	},
+	"keywords": [
+		"kiwi-lib"
+	],
+	"files": [
+		"lib"
+	],
+	"packageManager": "yarn@3.1.1"
+}
